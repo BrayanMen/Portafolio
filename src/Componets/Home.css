@@ -1,0 +1,15 @@
+.divHome{
+    font-family: 'Roboto';
+    font-style:oblique;
+    font-weight: 700;
+    color: rgba(224, 224, 224, 0.918);
+}
+
+.imgDiv {
+    border: 2px solid gray;
+    border-radius: 999px;
+    box-shadow: 0 100px 63px -60px #000;
+}
+.imgDiv:hover{
+    transform: scale(1.10);
+}

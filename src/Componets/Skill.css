@@ -1,0 +1,44 @@
+.skillContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.skillDiv{
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin:  3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: transparent;
+    border-radius: 20px;
+    background-color:#1f232796;
+    box-shadow: 0 100px 63px -60px #000;
+}
+
+.divCard{
+    border: transparent;
+    margin: 2rem;    
+    padding: 2px;
+}
+
+.divCard:hover{
+    transform: scale(1.30);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.452);
+    box-shadow: 0 70px 63px -60px #000;
+}
+
+
+    

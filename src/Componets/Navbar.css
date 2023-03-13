@@ -1,0 +1,92 @@
+
+.NavContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border: transparent;
+    position: sticky;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+}
+
+.navbarDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f232796;
+    padding-block: 15px;
+    border: transparent;
+}
+
+.navbarDiv a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.listNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menuDiv {
+    overflow: hidden;
+    margin: 0 0;
+}
+
+#toggler,
+.navbarDiv label {
+    display: none;
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+    .NavContainer {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        border: transparent;
+    }
+
+    .menuDiv {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .listNav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbarDiv label {
+        display: flex;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menuDiv {
+        max-height: 100%;
+    }
+
+    .line {
+        width: 5rem;
+        height: 1.5rem;
+        background-image: url("../Assets/togle.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        margin-left: 1rem;
+        margin-right: auto;
+        transform: scaleX(0.8);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+}
